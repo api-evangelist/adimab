@@ -1,0 +1,39 @@
+generated: '2026-08-02'
+method: probed
+source: live GET of /.well-known/* on every host in apis.yml
+note: >-
+  Adimab publishes no /.well-known discovery surface. Every RFC 8615 path probed
+  on both adimab.com and www.adimab.com returned 404. Recorded as an honest
+  negative so re-runs do not re-probe blindly; no WellKnown pointer is wired in
+  apis.yml because no document was found.
+hosts:
+- host: https://adimab.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://www.adimab.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+x-evidence:
+  fetched: '2026-08-02'
+  hosts_probed:
+  - adimab.com
+  - www.adimab.com
+  documents_found: 0

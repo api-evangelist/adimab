@@ -1,17 +1,35 @@
 aid: adimab
 name: Adimab
-description: 'Adimab is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Adimab is a private biotechnology company founded in 2007, headquartered
+  in Lebanon, New Hampshire, with a west coast office in Mountain View, California.
+  It operates a proprietary yeast-based antibody discovery and engineering platform
+  that combines fully human synthetic and immune libraries to generate specific, stable
+  and developable IgGs, heavy-chain antibodies (HCAbs), multispecifics, T-cell engagers
+  and T-cell receptors. Adimab deliberately runs no internal therapeutic pipeline,
+  instead partnering with biopharma companies through funded discovery programs, platform
+  transfer and non-exclusive program deals. The company reports more than 140 industry
+  partnerships since 2009, 675+ therapeutic programs initiated, 90+ clinical programs
+  and 6 commercial products. Adimab publishes no public developer API, SDK, developer
+  portal or machine-readable API contract; its capabilities are delivered as laboratory
+  discovery services and licensed platform transfer under partnership agreements.'
 url: https://raw.githubusercontent.com/api-evangelist/adimab/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
 x-tier-reason: harvest
+image: https://adimab.com/wp-content/uploads/2025/08/ADIMAB_LOGO.svg
 specificationVersion: '0.20'
 created: '2026-08-02'
 modified: '2026-08-02'
 tags:
 - Company
+- Biotechnology
+- Life Sciences
+- Antibody Discovery
+- Protein Engineering
+- Drug Discovery
+- Pharmaceuticals
+- Research Services
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +37,48 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/adimab-domain-security.yml
+- type: LLMsTxt
+  url: llms/adimab-llms.txt
 - type: Website
+  url: https://adimab.com/
+- type: About
+  url: https://adimab.com/about-us/
+- type: Contact
+  url: https://adimab.com/contact-us/
+- type: Careers
+  url: https://adimab.com/careers/open-positions/
+- type: PressReleases
+  url: https://adimab.com/news-events/press-releases/
+- type: Events
+  url: https://adimab.com/news-events/events/
+- type: Resources
+  url: https://adimab.com/resources/
+- type: Publications
+  url: https://adimab.com/resources/?_resources_type=publications
+- type: WhitePapers
+  url: https://adimab.com/resources/?_resources_type=white-papers
+- type: PrivacyPolicy
+  url: https://adimab.com/privacy-policy/
+- type: TermsOfService
+  url: https://adimab.com/terms-of-use/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/adimab-llc/
+- type: Leadership
+  url: https://adimab.com/leadership/
+- type: SecondaryMarket
   url: https://www.hiive.com/securities/adimab-stock
+x-enrichment:
+  date: '2026-08-02'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-api-surface:
+  public_api: false
+  checked: '2026-08-02'
+  note: >-
+    No developer portal, API documentation, OpenAPI/Swagger/AsyncAPI/GraphQL
+    contract, MCP server, A2A agent card, /.well-known surface, or first-party
+    SDK on npm/PyPI/RubyGems/crates.io. Adimab delivers antibody discovery as a
+    laboratory service and licensed platform transfer, not as an API.
