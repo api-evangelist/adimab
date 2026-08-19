@@ -18,7 +18,7 @@ x-source: harvest:secondary-market
 x-tier: stub
 x-tier-reason: harvest
 image: https://adimab.com/wp-content/uploads/2025/08/ADIMAB_LOGO.svg
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-08-02'
 modified: '2026-08-02'
 tags:
